@@ -21,6 +21,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.subtract(8, 2), 6)
         self.assertEqual(self.calculator.result, 6)
 
+    def test_multiply_method_calculator(self):
+        self.assertEqual(self.calculator.multiply(8, 2.0), 16)
+        self.assertEqual(self.calculator.result, 16)
+
     def test_divide_method_calculator(self):
         self.assertEqual(self.calculator.divide(8, 2.0), 4)
         self.assertEqual(self.calculator.result, 4)
