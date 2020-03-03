@@ -25,6 +25,10 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.divide(8, 2), 4)
         self.assertEqual(self.calculator.result, 4)
 
+    def test_square_method_calculator(self):
+        self.assertEqual(self.calculator.square(4), 16)
+        self.assertEqual(self.calculator.result, 16)
+
     def tearDown(self) -> None:
         # self.calculator.dispose()
         pass
