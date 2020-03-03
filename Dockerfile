@@ -1,4 +1,4 @@
-FROM python:1
+FROM python:3
 
 ADD src /src
 
