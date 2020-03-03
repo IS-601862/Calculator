@@ -3,23 +3,26 @@ import math
 
 # multiplication, division, square, and square root
 def addition(a, b):
-    return a + b
+    return float(a) + float(b)
 
 
 def subtraction(a, b):
-    return a - b
+    return float(a) - float(b)
 
 
 def division(a, b):
-    return a / b
+    if int(b) != 0:
+        return float(a) / float(b)
+    else:
+        return ZeroDivisionError
 
 
 def square(a):
-    return a ** 2
+    return float(a) ** 2
 
 
 def squareroot(a):
-    return math.sqrt(a)
+    return math.sqrt(float(a))
 
 
 class Calculator:
@@ -44,6 +47,6 @@ class Calculator:
         self.result = square(a)
         return self.result
 
-    def sqare_root(self, a):
+    def square_root(self, a):
         self.result = squareroot(a)
         return self.result

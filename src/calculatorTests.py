@@ -22,7 +22,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 6)
 
     def test_divide_method_calculator(self):
-        self.assertEqual(self.calculator.divide(8, 2), 4)
+        self.assertEqual(self.calculator.divide(8, 2.0), 4)
         self.assertEqual(self.calculator.result, 4)
 
     def test_square_method_calculator(self):
@@ -30,7 +30,7 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 16)
 
     def test_squareroot_method_calculator(self):
-        self.assertEqual(self.calculator.sqare_root(4), 2)
+        self.assertEqual(self.calculator.square_root(4), 2)
         self.assertEqual(self.calculator.result, 2)
 
     def tearDown(self) -> None:
