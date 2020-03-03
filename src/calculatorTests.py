@@ -21,10 +21,13 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.subtract(8, 2), 6)
         self.assertEqual(self.calculator.result, 6)
 
+    def test_divide_method_calculator(self):
+        self.assertEqual(self.calculator.divide(8, 2), 4)
+        self.assertEqual(self.calculator.result, 4)
+
     def tearDown(self) -> None:
         # self.calculator.dispose()
         pass
-
 
 
 if __name__ == "__main__":

@@ -1,8 +1,14 @@
+# multiplication, division, square, and square root
 def addition(a, b):
     return a + b
 
+
 def subtraction(a, b):
     return a - b
+
+
+def division(a, b):
+    return a / b
 
 
 class Calculator:
@@ -17,4 +23,8 @@ class Calculator:
 
     def subtract(self, a, b):
         self.result = subtraction(a, b)
+        return self.result
+
+    def divide(self, a, b):
+        self.result = division(a, b)
         return self.result
