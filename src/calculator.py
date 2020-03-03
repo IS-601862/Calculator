@@ -1,7 +1,6 @@
 import math
 
 
-# multiplication, division, square, and square root
 def addition(a, b):
     return float(a) + float(b)
 
